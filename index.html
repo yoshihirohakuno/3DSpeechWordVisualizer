@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>会話の3D可視化 - 音声をリアルタイムで3Dに落とすWebアプリ</title>
+    <meta name="description" content="マイクで取得した発話をリアルタイムで文字起こしし、形態素解析で単語に分解して、3Dオブジェクトとして物理演算で落下・蓄積させるインタラクティブなWebアプリです。" />
+    <meta name="keywords" content="音声認識, 3D, Web Speech API, Three.js, React Three Fiber, 物理演算, 形態素解析" />
+    <meta name="author" content="Antigravity" />
+    <!-- CDNでKuromojiをロードしてブラウザ互換性の競合（path, fs）を完全に回避します -->
+    <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
